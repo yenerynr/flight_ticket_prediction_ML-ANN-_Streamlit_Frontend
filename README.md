@@ -23,4 +23,5 @@ Some basic descriptive statistics and visualasation carried out.
 Machine Learning Models and Neuaral Networks for making predictions are used in the file.
 Streamlit Frontend page and the code also can be found in the repository. 
 thanks.
+
 Yener Yalciner
