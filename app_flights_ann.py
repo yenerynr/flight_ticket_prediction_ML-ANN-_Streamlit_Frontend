@@ -68,22 +68,22 @@ session_state = get_session_state(source_dest_map=None, source_city=None, destin
 st.set_page_config(page_title='Flight Ticket Prediction', page_icon='🛫', layout='wide', initial_sidebar_state='expanded')
 
 ##loading the ann model and label encoder
-model = load_model(r'C:\Users\yener\OneDrive\Desktop\flights\flight_model')
-label_encoders = joblib.load(r'C:\Users\yener\OneDrive\Desktop\flights\label_encoders.pkl')
+model = load_model("flight_model")
+label_encoders = joblib.load("label_encoders.pkl")
 
 # Load the label encoders dictionary from the pickle file
 with open('label_encoders.pkl', 'rb') as f:
     label_encoders = pickle.load(f)
 
 ## load the copy of the dataset
-df = pd.read_csv(r'C:\Users\yener\OneDrive\Desktop\flights\flights.csv')
+df = pd.read_csv("flights.csv")
 
 ## add page title and content
 st.title('Flight Ticket Prediction')
 st.write('Please enter set of information below to predict the possible fligt ticket cost: ')
 
 ## add image
-image = Image.open(r"C:\Users\yener\OneDrive\Desktop\flights\booking-flight-ticket.jpg")
+image = Image.open("booking-flight-ticket.jpg")
 st.image(image, use_column_width = True)
 
 # User input
