@@ -25,3 +25,7 @@ Streamlit Frontend page and the code also can be found in the repository.
 thanks.
 
 Yener Yalciner
+
+streamlit front end link:
+
+https://yenerynr-flight-ticket-prediction-ml-ann-app-flights-ann-0i2hv7.streamlit.app/
